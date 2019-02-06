@@ -1,9 +1,8 @@
-﻿Group Project for ETEC2104
+Group Project for ETEC2104
 Rules:
 Do NOT Post random txt files
+Lane Knauff AKA Shawnee Student
 
-Name:
-Tyler Johnson
 
 Hello World
 All Hail Shaggy
