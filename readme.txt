@@ -17,8 +17,8 @@ yoru no sukima Make it a light
 isogashii ttara hima mo nai 
 uketa kizuato sae katte ni imeiji tsuki de saeteku 
 dare mo kare mo DEAR OR ALIVE 
-mamoru dake ja CAN’T SURVIVE 
-I don’t wanna lie to myself 
+mamoru dake ja CANâ€™T SURVIVE 
+I donâ€™t wanna lie to myself 
 
 
 Keep on the fight Get light 
@@ -26,8 +26,8 @@ I give a rousing cry
 Keep on the day and night 
 Time to ride 
 No matter what anyone say 
-I’ll find my way
-Yeah I’ll never go away 
+Iâ€™ll find my way
+Yeah Iâ€™ll never go away 
 Never go away 
 
 Now nobody can stop me no way 
@@ -40,3 +40,5 @@ nouri ni nokotta shippai nante
 zenbu torikaese ima ja No more
 I struggle in this world
 (Never can go back there)
+
+I Came With the Force of a Thousand Suns
