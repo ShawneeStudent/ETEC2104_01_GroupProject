@@ -1,0 +1,43 @@
+Table
+User
+	ID:primary key, int
+	email:string
+	profilepicture:img
+	pwhash:string
+	isAdmin:bool
+	name:string
+
+Table
+Post
+	PostID:Primary key, int
+	CreatorID: foreign key, int
+	worldVisible: bool
+	postDate: int
+	TagID: foreign key, int
+
+Table
+Comment
+	CommentID: Primary key, int
+	ParentCommentID: foreign key, int
+	Date: int
+	Data: string
+	PostID: foreign key, int
+	UserID: foreign key, int
+
+Table
+Tag
+	Content: string
+	TagID: PrimaryKey
+
+Table
+Rating
+	UserID: foreign key, int
+	PostID: foreign key, int
+	rating: int
+
+Table
+View
+	UserID: foreign key, int
+	PostID: foreign key, int
+	Date: int
+	IP: string
