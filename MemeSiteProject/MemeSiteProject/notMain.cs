@@ -30,6 +30,8 @@ namespace MemeSiteProject
             "insert into comment (uid,commentID,postID,date,data) values (0,1,0,20190213,'Hi Jim')",
             "insert into tag (uid,tagID) values (0, 13)",
             "insert into rating (uid,postID,rating) values (0,0,5)",
+            "insert into rating (uid,postID,rating) values (1337,1,10)",
+            "insert into rating (uid,postID,rating) values (1337,2,100)",
             "insert into view (uid,postID,date,ipAddress) values (0,0,20190214,'192.1337.7357')"
         };
 
@@ -67,6 +69,16 @@ namespace MemeSiteProject
             while (rdr.Read())
             {
                 Console.WriteLine("OUTER JOIN RESULT(User): " + rdr["BLAH"] + " | amount of posts: " + rdr["BOOM"]);
+            }
+            Console.WriteLine("--------------------");
+
+            cmd = new SQLiteCommand("select posts.postID as pos, rating.rating as rate from posts " +
+                "left outer join rating on posts.postID=rating.postID group by posts.postID " +
+                "order by rating.rating desc;", conn);
+            rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                Console.WriteLine("OUTER JOIN RESULT(Rating): " + rdr["pos"] + " | recieved a rating of: " + rdr["rate"]);
             }
 
             conn.Close();
