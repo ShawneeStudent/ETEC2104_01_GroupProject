@@ -9,6 +9,8 @@ MemeSiteProject/.vs/MemeSiteProject/v15/.suo
 *.config
 MemeSiteProject/MemeSiteProject/obj/Debug/MemeSiteProject.csproj.FileListAbsolute.txt
 MemeSiteProject/.vs
+MemeSiteProject/MemeSiteProject/bin
+MemeSiteProject/MemeSiteProject/obj
 *.ide-shm
 *.ide-wal
 *.ide-wal
