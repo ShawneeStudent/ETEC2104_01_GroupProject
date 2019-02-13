@@ -2,7 +2,7 @@ Table
 User
 	ID:primary key, int
 	email:string
-	profilepicture:img
+	profilepicture:string
 	pwhash:string
 	isAdmin:bool
 	name:string
