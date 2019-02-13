@@ -2,3 +2,9 @@
 *.cache
 *.lock
 MemeSiteProject/.vs/MemeSiteProject/v15/.suo
+*.exe
+*.dll
+*.xyz
+*.pdb
+*.config
+MemeSiteProject/MemeSiteProject/obj/Debug/MemeSiteProject.csproj.FileListAbsolute.txt
