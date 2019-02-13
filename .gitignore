@@ -8,4 +8,9 @@ MemeSiteProject/.vs/MemeSiteProject/v15/.suo
 *.pdb
 *.config
 MemeSiteProject/MemeSiteProject/obj/Debug/MemeSiteProject.csproj.FileListAbsolute.txt
+MemeSiteProject/.vs
 *.ide-shm
+*.ide-wal
+*.ide-wal
+*.ide
+*.suo
