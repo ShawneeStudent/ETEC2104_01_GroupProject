@@ -18,7 +18,7 @@ namespace MemeSiteProject
             "create table users (uid integer primary key, email text, picture text, name text, lastlogin integer);",
             "create table posts (uid integer, postID integer primary key, forumid integer, parentid integer, content text)",
             "create table comment (uid integer, commentID integer primary key, postID integer, date integer, data text)",
-            "create table tag (uid integer, tagID integer primary key)",
+            "create table tag (uid integer, postID integer, tagID integer primary key, tname text)",
             "create table rating (uid integer, postID integer, rating integer)",
             "create table view (uid integer, postID integer, date integer, ipAddress text)",
 
@@ -30,7 +30,7 @@ namespace MemeSiteProject
             "insert into posts (uid,postID,forumid,parentid,content) values (0,0,1,NULL,'First post')",
             "insert into comment (uid,commentID,postID,date,data) values (0,1,0,20190213,'Hi Jim')",
             "insert into comment (uid,commentID,postID,date,data) values  (1,2,0,20190216,'Hello World')",
-            "insert into tag (uid,tagID) values (0, 13)",
+            "insert into tag (uid,postID,tagID,tname) values (0, 1, 13, 'Dank')",
             "insert into rating (uid,postID,rating) values (0,0,5)",
             "insert into rating (uid,postID,rating) values (1337,1,10)",
             "insert into rating (uid,postID,rating) values (1337,2,100)",
@@ -81,6 +81,14 @@ namespace MemeSiteProject
             while (rdr.Read())
             {
                 Console.WriteLine("OUTER JOIN RESULT(Rating): " + rdr["pos"] + " | recieved a rating of: " + rdr["rate"]);
+            }
+            Console.WriteLine("--------------------");
+
+            cmd = new SQLiteCommand("select tname, postID from tag where postID = 1;", conn);
+            rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                Console.WriteLine("OUTER JOIN RESULT(tag): Post ID " + rdr["postID"] + " | has the tag(s) of: " + rdr["tname"]);
             }
 
             conn.Close();
