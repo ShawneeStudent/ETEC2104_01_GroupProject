@@ -24,10 +24,12 @@ namespace MemeSiteProject
 
             "insert into users (uid,email,picture,name,lastlogin) values (0,'postmaster@example.com','keyboardcat.jpg','admin',20190213)",
             "insert into users (uid,email,picture,name,lastlogin) values (1337,'myEmail@example.com','profilepic.png','Walter',20190213)",
+            "insert into users (uid,email,picture,name,lastlogin) values (1,'school@example.com','something.png','Tyler',20190213)",
             "insert into posts (uid, postID,forumid,parentID,content) values (1337,1,1,NULL,'Hello Peeps')",
             "insert into posts (uid, postID,forumid,parentID,content) values (1337,2,1,NULL,'Shaggy at 0.1% of his power level')",
             "insert into posts (uid,postID,forumid,parentid,content) values (0,0,1,NULL,'First post')",
             "insert into comment (uid,commentID,postID,date,data) values (0,1,0,20190213,'Hi Jim')",
+            "insert into comment (uid,commentID,postID,date,data) values  (1,2,0,20190216,'Hello World')",
             "insert into tag (uid,tagID) values (0, 13)",
             "insert into rating (uid,postID,rating) values (0,0,5)",
             "insert into rating (uid,postID,rating) values (1337,1,10)",
