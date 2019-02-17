@@ -84,6 +84,16 @@ namespace MemeSiteProject
             }
             Console.WriteLine("--------------------");
 
+            cmd = new SQLiteCommand("select posts.postID as uid, view.uid as pid from posts " +
+                "left outer join view on post.postID=view.postID group by view.ipAddress " +
+                "order by view.postID desc;", conn);
+            rdr = cmd.ExecuteReader(); // Getting an error here. Just comment out my block to get rid of errors temporarily.
+            while (rdr.Read())
+            {
+                Console.WriteLine("OUTER JOIN RESULT(View): " + rdr["uid"] + " | : " + rdr["pid"]);
+            }
+            Console.WriteLine("--------------------");
+
             cmd = new SQLiteCommand("select tname, postID from tag where postID = 1;", conn);
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
