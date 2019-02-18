@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SQLite.Designer">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\System.Data.SQLite\2005\bin\SQLite.Designer.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\System.Data.SQLite\2005\bin\SQLite.Designer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
